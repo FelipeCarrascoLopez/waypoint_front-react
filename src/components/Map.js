@@ -4,6 +4,7 @@ import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 const containerStyle = {
   width: "100%",
   height: "500px",
+  borderRadius: "20px"
 };
 
 const center = {
@@ -64,7 +65,22 @@ function Map() {
           <p><strong>Identificador:</strong> {selectedVehicle.vehicle_identifier}</p>
           <p><strong>Latitud:</strong> {selectedVehicle.latitude}</p>
           <p><strong>Longitud:</strong> {selectedVehicle.longitude}</p>
-          <button onClick={() => setSelectedVehicle(null)}>Cerrar</button>
+          <p>
+      <strong>Datetime:</strong>{" "}
+      {new Date(selectedVehicle.timestamp).toLocaleDateString("es-ES")}{" "}
+      {new Date(selectedVehicle.timestamp).toLocaleTimeString("es-ES", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false, // Formato 24 horas
+      })}{" "}
+      hrs
+    </p>
+    <button 
+  className="btn btn-danger" 
+  onClick={() => setSelectedVehicle(null)}
+>
+  Cerrar
+</button>
         </div>
       )}
     </div>
@@ -75,7 +91,7 @@ const infoBoxStyle = {
   marginTop: "20px",
   padding: "15px",
   border: "1px solid #ccc",
-  borderRadius: "5px",
+  borderRadius: "20px",
   backgroundColor: "#f9f9f9",
   width: "100%",
   maxWidth: "600px",
