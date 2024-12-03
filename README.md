@@ -19,7 +19,7 @@
 
 Ejecuta los siguientes comandos en tu terminal:
 
-- git clone https://github.com/FelipeCarrascoLopez/waypoint_api-rails.git 
+- git clone https://github.com/FelipeCarrascoLopez/waypoint_front-react.git
 - cd waypoint_api-rails
 
 
