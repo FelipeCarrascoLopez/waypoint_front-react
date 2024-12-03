@@ -59,12 +59,13 @@ docker compose up --build
 
 
 2. Una vez iniciados los servicios, la API estará disponible con Swagger en:  
-[http://localhost:3000/api-docs/](http://localhost:3000/api-docs/)
+[http://localhost:3005(http://localhost:3005)
 
 ---
 
 ## Vista de Ejemplo
-![Vista de Swagger](https://github.com/user-attachments/assets/481fe5f7-14b8-47c1-800a-fddbe6c8092c)
+![image](https://github.com/user-attachments/assets/d6b10004-7157-4653-8bf7-17dd21e4e8d0)
+
 
 
 
