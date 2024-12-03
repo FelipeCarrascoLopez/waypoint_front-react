@@ -29,7 +29,13 @@ Ejecuta los siguientes comandos en tu terminal:
 
 1. Crear un archivo `.env` en el directorio raíz del proyecto con las siguientes variables de entorno:
 
-REACT_APP_GOOGLE_MAPS_API_KEY=INSERT_KEY_GOOGLE_MAPS_API
+REACT_APP_GOOGLE_MAPS_API_KEY=API-KEY-GOOGLE-MAPS
+
+si no tienes la api key de google maps obtener aqui 
+
+https://developers.google.com/maps/documentation/javascript/get-api-key?hl=es
+
+por temas de seguridad prefiero crear el .env y no compartir la clave directamente en el repositorio
 
 
 2. Crear el archivo `.env`:
